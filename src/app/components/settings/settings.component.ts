@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./settings.component.css']
 })
 export class SettingsComponent implements OnInit {
-
+  routes = [
+    { linkName: 'Profile', url: 'profile' },
+    { linkName: 'Contact Info', url: 'contact' }
+  ];
   constructor() { }
 
   ngOnInit() {
